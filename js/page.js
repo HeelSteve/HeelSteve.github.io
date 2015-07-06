@@ -39,7 +39,7 @@ function moveBird(){
    i += 1;
      bird.animate({ "margin-left": "-=50px" }, "slow" );
      console.log('move');
-  } while (i < 13);
+  } while (i < 23);
   changem;
 }
 
