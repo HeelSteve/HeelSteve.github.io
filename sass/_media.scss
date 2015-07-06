@@ -1,0 +1,37 @@
+$break-secret: 316px;
+$break-xsmall: 315px;
+$break-small: 317px;
+$break-mid: 480px;
+$break-large: 1024px !default;
+
+@mixin breakpoint($type, $fallback:false, $parent:true) {
+
+  @if $type == secret {
+    @media (min-width: $break-secret) {
+      @content;
+    }
+  }
+
+  @if $type == xsmall {
+    @media (max-width: $break-xsmall) {
+      @content;
+    }
+  }
+
+ @if $type == small {
+    @media (min-width: $break-small) {
+      @content;
+    }
+  }
+
+  @if $type == mid {
+    @media (max-width: $break-mid) {
+      @content;
+    }
+  }
+  @if $type == large {
+    @media (max-width: $break-large) {
+      @content;
+    }
+  }
+}
