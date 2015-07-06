@@ -100,7 +100,7 @@ section article h1 {
   min-height: 100%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: -300px;
+  margin-top: -400px;
   position: relative;
   opacity: 0; }
 
@@ -108,20 +108,5 @@ section article h1 {
   width: 90%;
   min-height: auto;
   position: relative; }
-  @media (min-width: 316px) {
-    .newman img {
-      width: 60%; } }
-  @media (max-width: 315px) {
-    .newman img {
-      width: 40%; } }
-  @media (min-width: 317px) {
-    .newman img {
-      width: 90%; } }
-  @media (max-width: 480px) {
-    .newman img {
-      width: 60%; } }
-  @media (max-width: 1024px) {
-    .newman img {
-      width: 40%; } }
 
 /*# sourceMappingURL=style.css.map */
