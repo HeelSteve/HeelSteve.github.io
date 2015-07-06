@@ -37,9 +37,9 @@ function moveBird(){
   var i = 0;
   do {
    i += 1;
-     bird.animate({ "margin-left": "-=50px" }, "fast" );
+     bird.animate({ "margin-left": "-=50px" }, "slow" );
      console.log('move');
-  } while (i < 29);
+  } while (i < 13);
   changem;
 }
 
