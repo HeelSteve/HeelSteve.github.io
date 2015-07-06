@@ -9,6 +9,9 @@ body {
   font-family: "Times New Roman";
   height: 100%; }
 
+::-webkit-scrollbar {
+  display: none; }
+
 .middle {
   text-align: center;
   margin-left: auto;
@@ -47,7 +50,6 @@ section article h1 {
   display: inline-block;
   margin: 0 auto;
   width: 100%;
-  line-height: 80%;
   position: relative;
   top: 0;
   bottom: 0;
@@ -70,15 +72,14 @@ section article h1 {
       font-size: 500%; } }
 
 .pokeheel {
-  margin-left: 1200px;
-  opacity: 0;
-  min-width: 5%;
+  margin-left: 1300px;
+  min-width: 10%;
   min-height: 60%;
   margin-bottom: 0;
   margin-top: 200px;
   margin-right: auto;
   display: inline-block;
-  overflow: hidden; }
+  opacity: 0; }
 
 .pokeheel img {
   min-width: 18%;
@@ -86,10 +87,11 @@ section article h1 {
   line-height: 0; }
 
 .title {
-  position: relative;
   text-align: center;
   padding: 0;
-  margin: 0 auto; }
+  margin: 0 auto;
+  top: 50%;
+  position: relative; }
 
 .header {
   height: 40%;

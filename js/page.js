@@ -23,7 +23,7 @@ var rattleSnake = setInterval(function(){a316()}, 3016);
 
 function birdUp() {
   var margin = bird.css("margin-left");
-  if (margin == "50px"){
+  if (margin == "0px"){
     birdChange.css("min-width",9+"%")
     birdChange.css("margin-top","45px")
     birdChange.prop("src","i/PidgeotCill.gif")
@@ -39,7 +39,7 @@ function moveBird(){
    i += 1;
      bird.animate({ "margin-left": "-=50px" }, "slow" );
      console.log('move');
-  } while (i < 23);
+  } while (i < 26);
   changem;
 }
 
