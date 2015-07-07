@@ -23,9 +23,8 @@ var rattleSnake = setInterval(function(){a316()}, 3016);
 
 function birdUp() {
   var margin = bird.css("margin-left");
-  if (margin == "0px"){
+  if (margin == "25px"){
     birdChange.css("min-width",9+"%")
-    birdChange.css("margin-top","45px")
     birdChange.prop("src","i/PidgeotCill.gif")
   window.clearInterval(changem)
   }
@@ -37,17 +36,19 @@ function moveBird(){
   var i = 0;
   do {
    i += 1;
-     bird.animate({ "margin-left": "-=50px" }, "slow" );
+     bird.animate({ "margin-left": "-=25px" }, "fast" );
      console.log('move');
-  } while (i < 26);
+  } while (i < 39);
   changem;
 }
 
 function newMan(){
-  $('.newman').css("opacity",1);
+  $('body').css("background-image","url('https://github.com/HeelSteve/heelsteve.github.io/blob/master/i/magicword.gif?raw=true')");
+  $('.title').css("display","none");
   setTimeout(function(){
-    $('.newman').css("opacity",0);
-  }, 2000)
+    $('body').css("background-image","none");
+    $('.title').css("display","inline-block");
+  }, 3000)
 }
 
 
